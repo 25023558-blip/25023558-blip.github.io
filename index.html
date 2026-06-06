@@ -1,0 +1,36 @@
+<div style="font-family: 'Poppins', sans-serif; color: #00eeff; font-size: 24px; font-weight: bold; text-align: left;">
+  Tôi là <span id="typing"></span>
+</div>
+<script>
+  const words = ["Frontend Developer", "Designer", "Blogger"];
+  let i = 0, timer;
+  function typingEffect() {
+    let word = words[i].split("");
+    var loopTyping = function() {
+      if (word.length > 0) {
+        document.getElementById('typing').innerHTML += word.shift();
+      } else {
+        setTimeout(deletingEffect, 2000);
+        return false;
+      }
+      timer = setTimeout(loopTyping, 100);
+    };
+    loopTyping();
+  }
+  function deletingEffect() {
+    let word = words[i].split("");
+    var loopDeleting = function() {
+      if (word.length > 0) {
+        word.pop();
+        document.getElementById('typing').innerHTML = word.join("");
+      } else {
+        if (words.length > (i + 1)) { i++; } else { i = 0; }
+        setTimeout(typingEffect, 500);
+        return false;
+      }
+      timer = setTimeout(loopDeleting, 50);
+    };
+    loopDeleting();
+  }
+  typingEffect();
+</script>
