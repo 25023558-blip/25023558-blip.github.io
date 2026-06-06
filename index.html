@@ -1,36 +1,46 @@
-<div style="font-family: 'Poppins', sans-serif; color: #00eeff; font-size: 24px; font-weight: bold; text-align: left;">
-  Tôi là <span id="typing"></span>
-</div>
-<script>
-  const words = ["Frontend Developer", "Designer", "Blogger"];
-  let i = 0, timer;
-  function typingEffect() {
-    let word = words[i].split("");
-    var loopTyping = function() {
-      if (word.length > 0) {
-        document.getElementById('typing').innerHTML += word.shift();
-      } else {
-        setTimeout(deletingEffect, 2000);
-        return false;
-      }
-      timer = setTimeout(loopTyping, 100);
-    };
-    loopTyping();
-  }
-  function deletingEffect() {
-    let word = words[i].split("");
-    var loopDeleting = function() {
-      if (word.length > 0) {
-        word.pop();
-        document.getElementById('typing').innerHTML = word.join("");
-      } else {
-        if (words.length > (i + 1)) { i++; } else { i = 0; }
-        setTimeout(typingEffect, 500);
-        return false;
-      }
-      timer = setTimeout(loopDeleting, 50);
-    };
-    loopDeleting();
-  }
-  typingEffect();
-</script>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoàng Anh Portfolio</title>
+    <!-- Nhúng Font chữ và Icon -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Nhúng file CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="header">
+        <a href="#" class="logo">Hoàng Anh<span>.</span></a>
+        <nav class="navbar">
+            <a href="#home" class="active">Trang Chủ</a>
+            <a href="#about">Giới Thiệu</a>
+            <a href="#portfolio">Dự Án</a>
+            <a href="#contact">Liên Hệ</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Xin chào, Tôi là</h3>
+            <h1>Nguyễn Vũ Hoàng Anh</h1>
+            <h3>Và tôi là một <span class="multiple-text"></span></h3>
+            <p>Chào mừng bạn đến với portfolio của tôi. Nơi tôi chia sẻ các dự án và hành trình phát triển bản thân.</p>
+            <div class="social-media">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-github' ></i></a>
+                <a href="#"><i class='bx bxl-linkedin' ></i></a>
+            </div>
+            <a href="#" class="btn">Tải CV của tôi</a>
+        </div>
+    </section>
+
+    <!-- Thư viện chữ chạy và file JS -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
