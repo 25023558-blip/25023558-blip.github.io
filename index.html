@@ -1,94 +1,63 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hoàng Anh Portfolio</title>
-    <!-- Nhúng Font chữ và Icon -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!-- Nhúng file CSS -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <!-- Header / Navbar -->
-    <header class="header">
-        <a href="#" class="logo">Hoàng Anh<span>.</span></a>
-        <nav class="navbar">
-            <a href="#home" class="active">Trang Chủ</a>
-            <a href="#portfolio">Dự Án</a>
-            <a href="#contact">Liên Hệ</a>
-        </nav>
-    </header>
-
-    <!-- Trang chủ (Home) -->
-    <section class="home" id="home">
-        <div class="home-content">
-            <h3>Xin chào, Tôi là</h3>
-            <h1>Nguyễn Vũ Hoàng Anh</h1>
-            <h3>Và tôi là một <span class="multiple-text"></span></h3>
-            <p>Chào mừng bạn đến với portfolio của tôi. Nơi tôi chia sẻ các dự án, kỹ năng và hành trình phát triển bản thân trên con đường công nghệ.</p>
-            
-            <div class="social-media">
-                <a href="#"><i class='bx bxl-facebook'></i></a>
-                <a href="#"><i class='bx bxl-github' ></i></a>
-                <a href="#"><i class='bx bxl-linkedin' ></i></a>
-            </div>
-            <a href="#" class="btn">Tải CV của tôi</a>
+<!-- Phần Giới Thiệu (About) -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <!-- Thay bằng link ảnh cá nhân của bạn -->
+            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=500" alt="About Me">
         </div>
-
-        <!-- Khung chứa ảnh đại diện -->
-        <div class="home-img">
-            <img src="avatar.jpg" alt="Avatar Hoàng Anh">
+        <div class="about-content">
+            <h2 class="heading">Giới <span>Thiệu</span></h2>
+            <h3>Lập Trình Viên & Sinh Viên</h3>
+            <p>Tôi là một người đam mê công nghệ và thiết kế giao diện web. Trong quá trình học tập, tôi luôn nỗ lực nắm bắt các kiến thức mới nhất để tạo ra những trang web không chỉ đẹp mắt mà còn mang lại trải nghiệm mượt mà cho người dùng. Mục tiêu của tôi là trở thành một Front-end Developer chuyên nghiệp.</p>
+            <a href="#" class="btn">Đọc thêm</a>
         </div>
     </section>
 
-    <!-- Phần Dự Án (Portfolio) -->
-    <section class="portfolio" id="portfolio">
-        <h2 class="heading">Dự Án <span>Của Tôi</span></h2>
-        
-        <div class="portfolio-container">
-            <!-- Thẻ Dự Án 1 -->
-            <div class="portfolio-card">
-                <div class="card-image">
-                    <img src="project1.jpg" alt="Dự án 1">
-                </div>
-                <div class="card-info">
-                    <h3>Tên Dự Án 01</h3>
-                    <p>Mô tả ngắn gọn về dự án. Ví dụ: Website này được xây dựng bằng HTML, CSS và JavaScript.</p>
-                    <a href="#" class="btn-small">Xem chi tiết</a>
-                </div>
-            </div>
+    <!-- Phần Nội Dung Học Tập / Khóa Học (Education) -->
+    <section class="education" id="education">
+        <h2 class="heading">Nội Dung <span>Học Tập</span></h2>
 
-            <!-- Thẻ Dự Án 2 -->
-            <div class="portfolio-card">
-                <div class="card-image">
-                    <img src="project2.jpg" alt="Dự án 2">
-                </div>
-                <div class="card-info">
-                    <h3>Tên Dự Án 02</h3>
-                    <p>Mô tả ngắn gọn về dự án. Ví dụ: Ứng dụng quản lý công việc với giao diện Dark Mode hiện đại.</p>
-                    <a href="#" class="btn-small">Xem chi tiết</a>
-                </div>
-            </div>
+        <div class="education-row">
+            <div class="education-column">
+                <h3 class="title">Hành trình & Khóa học</h3>
+                <div class="education-box">
+                    
+                    <!-- Bài học/Khóa học 1 -->
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i> 2023 - 2024</div>
+                            <h3>Khóa học Lập trình Web Cơ bản</h3>
+                            <p>Nắm vững nền tảng vững chắc về HTML5, CSS3 và JavaScript. Tự tay thiết kế và xây dựng các giao diện web tương tác (Responsive Design) hoạt động tốt trên cả máy tính và điện thoại di động.</p>
+                        </div>
+                    </div>
 
-            <!-- Thẻ Dự Án 3 -->
-            <div class="portfolio-card">
-                <div class="card-image">
-                    <img src="project3.jpg" alt="Dự án 3">
-                </div>
-                <div class="card-info">
-                    <h3>Tên Dự Án 03</h3>
-                    <p>Mô tả ngắn gọn về dự án. Ví dụ: Thiết kế giao diện (UI/UX) cho ứng dụng di động bán hàng.</p>
-                    <a href="#" class="btn-small">Xem chi tiết</a>
+                    <!-- Bài học/Khóa học 2 -->
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i> 2024 - Hiện tại</div>
+                            <h3>Phát triển Web Nâng cao</h3>
+                            <p>Đi sâu vào các thư viện và framework hiện đại như ReactJS, Bootstrap. Tìm hiểu cách tối ưu hóa hiệu suất trang web, kết nối API và quản lý mã nguồn trên GitHub chuyên nghiệp.</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Thư viện chữ chạy và file JS -->
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="script.js"></script>
-</body>
-</html>
+    <!-- Phần Liên Hệ (Contact) -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Liên <span>Hệ</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Họ và tên của bạn">
+                <input type="email" placeholder="Địa chỉ Email">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Số điện thoại">
+                <input type="text" placeholder="Tiêu đề lời nhắn">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Bạn muốn nhắn nhủ điều gì?"></textarea>
+            <input type="submit" value="Gửi Tin Nhắn" class="btn">
+        </form>
+    </section>
